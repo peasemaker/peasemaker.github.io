@@ -8,10 +8,10 @@
     <title>Test intent link</title>
 </head>
 <body>
-    <a
-        href="intent://yandex.kz/portal/defsearchpromo/landing/guide?step=1#Intent;scheme=https;end"
-    >
-        Click me
-    </a>
+    <script>
+        const windowKeys = Object.keys(window).filter(key => key.toLocaleLowerCase().includes('telegram'));
+        alert(windowKeys.join(' '));
+        alert(Object.keys(window.TelegramWebview).join(' '))
+    </script>
 </body>
 </html>
